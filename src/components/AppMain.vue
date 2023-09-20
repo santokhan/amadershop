@@ -38,9 +38,9 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-3">
-                        <a href="/cart" id="contact"
+                        <RouterLink to="/cart" id="contact"
                             class="border border-main text-main rounded-lg px-4 py-2.5 text-center hover:bg-main hover:text-white flex justify-center gap-2 items-center"><i
-                                class="fa fa-envelope"></i> এখনই অর্ডার করুন</a>
+                                class="fa fa-envelope"></i> এখনই অর্ডার করুন</RouterLink>
                         <a href="tel:01703805001"
                             class="bg-main rounded-lg px-4 py-2.5 text-white text-center hover:bg-main/80 flex justify-center gap-2 items-center"><i
                                 class="fa fa-phone"></i> 01703805001</a>
@@ -94,6 +94,7 @@ import AppContainer from './AppContainer.vue';
 import AppSlider from './AppSlider.vue';
 import Testimonial from './Testimonial.vue';
 import ContactForm from './ContactForm.vue';
+import { RouterLink } from 'vue-router'
 </script>
 
 <style scoped></style>

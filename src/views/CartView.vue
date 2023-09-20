@@ -1,32 +1,48 @@
 <template>
-    <AppContainer>
+    <div class="h-96 flex justify-center items-center" v-if="ordered">
+        <div class="flex flex-col items-center space-y-4 text-main">
+            <h1 class="text-4xl capitalize">Order placed successfully</h1>
+            <p>আপনার অর্ডারটি সফলভাবে সম্পন্ন হয়েছে আমাদের কল সেন্টার থেকে ফোন করে আপনার অর্ডারটি কনফার্ম করা হবে</p>
+            <RouterLink to="/"
+                class="bg-main rounded-lg px-4 py-2.5 text-white text-center hover:bg-main/80 flex justify-center gap-2 items-center">
+                প্রোডাক্ট বাছাই করুন</RouterLink>
+        </div>
+    </div>
+    <AppContainer v-else>
         <div class="flex flex-col lg:flex-row gap-8 py-16">
             <div class="w-full lg:w-1/2 space-y-8">
                 <h5 class="text-lg text-center">অর্ডারটি কনফার্ম করতে আপনার নাম, ঠিকানা, মোবাইল নাম্বার, লিখে অর্ডার কনফার্ম
                     করুন বাটনে ক্লিক করুন</h5>
-                <form class="space-y-5">
+                <form class="space-y-5" @submit="hanldeSubmit">
                     <div>
-                        <label for="subject" class="block mb-2 font-medium text-gray-900">আপনার নাম লিখুন *</label>
-                        <input type="text" id="subject"
+                        <label for="name" class="block mb-2 font-medium text-gray-900">আপনার নাম লিখুন *</label>
+                        <input type="text" id="name" name="name"
                             class="block px-3 py-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-main focus:border-main"
-                            placeholder="আপনার নাম লিখুন" required>
+                            placeholder="" required>
                     </div>
                     <div>
-                        <label for="subject" class="block mb-2 font-medium text-gray-900">আপনার মোবাইল *</label>
-                        <input type="text" id="subject"
+                        <label for="phone" class="block mb-2 font-medium text-gray-900">আপনার মোবাইল *</label>
+                        <input type="text" id="phone" name="phone"
                             class="block px-3 py-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-main focus:border-main"
                             placeholder="" required>
                     </div>
                     <div>
                         <label for="email" class="block mb-2 font-medium text-gray-900">ইমেইল</label>
-                        <input type="email" id="email"
+                        <input type="email" id="email" name="email"
                             class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-main focus:border-main block w-full px-3 py-2"
+                            placeholder="">
+                    </div>
+                    <div>
+                        <label for="address" class="block mb-2 font-medium text-gray-900">আপনার ঠিকানা লিখুন *</label>
+                        <input type="text" id="address" name="address"
+                            class="block px-3 py-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-main focus:border-main"
                             placeholder="" required>
                     </div>
                     <div class="">
-                        <label for="email" class="block mb-2 font-medium text-gray-900">আপনার এরিয়া সিলেক্ট করুন</label>
-                        <select name="" id=""
+                        <label for="area" class="block mb-2 font-medium text-gray-900">আপনার এরিয়া সিলেক্ট করুন</label>
+                        <select name="area" id="area"
                             class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-main focus:border-main block w-full px-3 py-2">
+                            <option value=""></option>
                             <option value="outside-dhaka">ঢাকার বাইরে</option>
                             <option value="inside-dhaka">ঢাকার ভিতরে</option>
                         </select>
@@ -94,8 +110,10 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import AppContainer from '../components/AppContainer.vue';
+import { RouterLink } from 'vue-router'
 
 const count = ref<number>(1)
+const ordered = ref<boolean>(false)
 
 function handleCount(payload: string) {
     if (payload === 'increment') {
@@ -113,6 +131,11 @@ function total(count: number | string): number {
         count = parseInt(count)
     }
     return count * 300
+}
+
+function hanldeSubmit(e: any) {
+    e.preventDefault();
+    ordered.value = true
 }
 </script>
 
