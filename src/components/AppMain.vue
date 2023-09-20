@@ -27,8 +27,9 @@
                         <h5 class="text-lg font-semibold">বর্ণনা</h5>
                         <p class="text-gray-700">100% খাঁটি দাড়ি বৃদ্ধির তেলের পণ্যের বিবরণ</p>
                         <p class="text-gray-700">100% বিশুদ্ধ জৈব এবং উচ্চ মানের পণ্য</p>
-                        <p class="text-gray-700">কোন সারাংশ এবং সংরক্ষণকারী কোন জেনেটিক্যালি পরিবর্তিত উপাদান কোন
-                            পার্শ্বপ্রতিক্রিয়া নেই</p>
+                        <p class="text-gray-700">
+                            কোন সারাংশ এবং সংরক্ষণকারী কোন জেনেটিক্যালি পরিবর্তিত উপাদান কোন পার্শ্বপ্রতিক্রিয়া নেই
+                        </p>
                     </div>
                     <div class="flex items-center gap-3">
                         <div class="line-through text-base mt-0.5">$25.00 USD</div>
