@@ -1,32 +1,29 @@
 <template>
     <section class="bg-white">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-            <h2 class="text-3xl lg:text-4xl font-semibold text-main text-center mb-4">Contact Us</h2>
-            <p class="mb-8 lg:mb-16 font-light text-center text-xl">
-                Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let
-                us know.</p>
+            <h2 class="text-3xl lg:text-4xl font-semibold text-main text-center mb-4">যোগাযোগ</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-xl">সেরা একটি পেতে এখন আমাদের সাথে যোগাযোগ করুন.</p>
             <form action="#" class="space-y-8">
                 <div>
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
+                    <label for="email" class="block mb-2 font-medium text-gray-900">ইমেইল</label>
                     <input type="email" id="email"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-main focus:border-main block w-full p-2.5"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-main focus:border-main block w-full p-2.5"
                         placeholder="name@flowbite.com" required>
                 </div>
                 <div>
-                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900">Subject</label>
+                    <label for="subject" class="block mb-2 font-medium text-gray-900">বিষয়</label>
                     <input type="text" id="subject"
-                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-main focus:border-main"
-                        placeholder="Let us know how we can help you" required>
+                        class="block p-3 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-main focus:border-main"
+                        placeholder="আপনার বিষয় লিখুন" required>
                 </div>
                 <div class="sm:col-span-2">
-                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your message</label>
+                    <label for="message" class="block mb-2 font-medium text-gray-900">বার্তা</label>
                     <textarea id="message" rows="6"
-                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-main focus:border-main"
-                        placeholder="Leave a comment..."></textarea>
+                        class="block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-main focus:border-main"
+                        placeholder="আপনার মন্তব্য লিখুন..."></textarea>
                 </div>
                 <button type="submit"
-                    class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-main sm:w-fit hover:bg-main/80">Send
-                    message</button>
+                    class="py-3 px-5 font-medium text-center text-white rounded-lg bg-main sm:w-fit hover:bg-main/80">Send</button>
             </form>
         </div>
     </section>
