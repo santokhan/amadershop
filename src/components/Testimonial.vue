@@ -1,6 +1,6 @@
 <template>
     <section class="bg-white" id="testimonial">
-        <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6 space-y-12">
+        <div class="max-w-screen-xl px-4 py-12 mx-auto text-center lg:py-16 lg:px-6 space-y-12">
             <h2 class="text-3xl lg:text-4xl font-semibold text-main text-center">What our client says</h2>
             <figure class="max-w-screen-md mx-auto">
                 <svg class="h-12 mx-auto mb-3 text-main" viewBox="0 0 24 27" fill="none"

@@ -32,7 +32,7 @@
                     </div>
                     <div class="flex items-center gap-3">
                         <div class="line-through text-base mt-0.5">$25.00 USD</div>
-                        <div class="">$18.00 USD</div>
+                        <div class="font-medium">$18.00 USD</div>
                         <div class="w-12 py-0.5 px-2 text-sm bg-main text-white text-center rounded-full font-medium">Sale
                         </div>
                     </div>
