@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-3">
-                        <a href="#" id="contact"
+                        <a href="/cart" id="contact"
                             class="border border-main text-main rounded-lg px-4 py-2.5 text-center hover:bg-main hover:text-white flex justify-center gap-2 items-center"><i
                                 class="fa fa-envelope"></i> এখনই অর্ডার করুন</a>
                         <a href="tel:01703805001"

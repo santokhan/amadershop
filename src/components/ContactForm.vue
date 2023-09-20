@@ -3,7 +3,7 @@
         <div class="mt-16 lg:mt-24 px-4 mx-auto max-w-screen-md">
             <h2 class="text-3xl lg:text-4xl font-semibold text-main text-center mb-4">যোগাযোগ</h2>
             <p class="mb-8 lg:mb-16 font-light text-center text-xl">সেরা একটি পেতে এখন আমাদের সাথে যোগাযোগ করুন.</p>
-            <form action="#" class="space-y-8">
+            <form class="space-y-8">
                 <div>
                     <label for="subject" class="block mb-2 font-medium text-gray-900">আপনার নাম লিখুন *</label>
                     <input type="text" id="subject"
@@ -23,16 +23,16 @@
                         placeholder="" required>
                 </div>
                 <div>
-                    <label for="subject" class="block mb-2 font-medium text-gray-900">বিষয়</label>
+                    <label for="subject" class="block mb-2 font-medium text-gray-900">আপনার বিষয় লিখুন</label>
                     <input type="text" id="subject"
                         class="block p-3 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-main focus:border-main"
-                        placeholder="আপনার বিষয় লিখুন" required>
+                        placeholder="" required>
                 </div>
                 <div class="sm:col-span-2">
-                    <label for="message" class="block mb-2 font-medium text-gray-900">বার্তা</label>
+                    <label for="message" class="block mb-2 font-medium text-gray-900">আপনার মন্তব্য লিখুন</label>
                     <textarea id="message" rows="6"
                         class="block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-main focus:border-main"
-                        placeholder="আপনার মন্তব্য লিখুন..."></textarea>
+                        placeholder="..."></textarea>
                 </div>
                 <button type="submit"
                     class="py-3 px-5 font-medium text-center text-white rounded-lg bg-main sm:w-fit hover:bg-main/80">Send</button>
