@@ -5,10 +5,22 @@
             <p class="mb-8 lg:mb-16 font-light text-center text-xl">সেরা একটি পেতে এখন আমাদের সাথে যোগাযোগ করুন.</p>
             <form action="#" class="space-y-8">
                 <div>
-                    <label for="email" class="block mb-2 font-medium text-gray-900">ইমেইল</label>
+                    <label for="subject" class="block mb-2 font-medium text-gray-900">আপনার নাম লিখুন *</label>
+                    <input type="text" id="subject"
+                        class="block p-3 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-main focus:border-main"
+                        placeholder="" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 font-medium text-gray-900">আপনার মোবাইল নাম্বারটি লিখুন *</label>
+                    <input type="text" id="subject"
+                        class="block p-3 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-main focus:border-main"
+                        placeholder="" required>
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 font-medium text-gray-900">ইমেইল *</label>
                     <input type="email" id="email"
                         class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-main focus:border-main block w-full p-2.5"
-                        placeholder="name@flowbite.com" required>
+                        placeholder="" required>
                 </div>
                 <div>
                     <label for="subject" class="block mb-2 font-medium text-gray-900">বিষয়</label>
