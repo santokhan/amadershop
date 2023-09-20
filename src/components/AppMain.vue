@@ -32,8 +32,8 @@
                         </p>
                     </div>
                     <div class="flex items-center gap-3">
-                        <div class="line-through text-base mt-0.5">$25.00 USD</div>
-                        <div class="font-medium">$18.00 USD</div>
+                        <div class="line-through text-base mt-0.5 flex items-center gap-1">BDT 800</div>
+                        <div class="font-medium">BDT 600</div>
                         <div class="w-12 py-0.5 px-2 text-sm bg-main text-white text-center rounded-full font-medium">Sale
                         </div>
                     </div>
