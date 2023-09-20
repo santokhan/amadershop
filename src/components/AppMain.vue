@@ -48,7 +48,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-lg mt-16 text-gray-700 space-y-4">
+        <div class="text-lg mt-12 text-gray-700 space-y-4">
             <h5 class="text-lg font-semibold">বিস্তারিত</h5>
             <ul class="space-y-3">
                 <li class="flex items-center gap-3"><i class="fa fa-check"></i> পণ্যের ধরন: দাড়ির তেল</li>
