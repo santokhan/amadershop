@@ -1,6 +1,6 @@
 <template>
     <section class="bg-white">
-        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <div class="mt-16 lg:mt-24 px-4 mx-auto max-w-screen-md">
             <h2 class="text-3xl lg:text-4xl font-semibold text-main text-center mb-4">যোগাযোগ</h2>
             <p class="mb-8 lg:mb-16 font-light text-center text-xl">সেরা একটি পেতে এখন আমাদের সাথে যোগাযোগ করুন.</p>
             <form action="#" class="space-y-8">
