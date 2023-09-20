@@ -38,11 +38,11 @@
                     </div>
                     <div class="flex flex-col gap-3">
                         <a href="#" id="contact"
-                            class="border border-main text-main rounded-lg px-4 py-2.5 text-center hover:bg-main hover:text-white flex justify-center gap-3 items-center"><i
+                            class="border border-main text-main rounded-lg px-4 py-2.5 text-center hover:bg-main hover:text-white flex justify-center gap-2 items-center"><i
                                 class="fa fa-envelope"></i> Get
                             in touch</a>
                         <a href="tel:01703805001"
-                            class="bg-main rounded-lg px-4 py-2.5 text-white text-center hover:bg-main/80 flex justify-center gap-3 items-center"><i
+                            class="bg-main rounded-lg px-4 py-2.5 text-white text-center hover:bg-main/80 flex justify-center gap-2 items-center"><i
                                 class="fa fa-phone"></i> Call Now</a>
                     </div>
                 </div>
