@@ -9,7 +9,7 @@
                         fill="currentColor" />
                 </svg>
                 <blockquote>
-                    <p class="text-xl font-medium text-gray-900 !leading-[2]">
+                    <p class="lg:text-xl font-medium text-gray-900 !leading-[2]">
                         নলার্জড পোরস মিনিমাইজ করবো কেন? আমি চাই পোরস একদম ভ্যানিশ হয়ে যাক!’ অদ্ভুত শোনাচ্ছে? পোরস সম্পর্কে
                         সঠিক নলেজ না থাকার কারণে এই কথাটা অনেকেই বলেন। তবে সত্যিটা হচ্ছে পোরস কখনোই ভ্যানিশ করা সম্ভব নয়।
                         ?
