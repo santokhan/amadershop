@@ -161,6 +161,8 @@ async function hanldeSubmit(e: any) {
             area: formData.area,
             phone: formData.phone,
             address: formData.address,
+            total: totalPrice.value,
+            items: count,
         })
     }).catch(err => { throw err }).then(res => res.json()).then(data => {
         console.log(data);
