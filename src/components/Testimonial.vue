@@ -11,8 +11,7 @@
                 <blockquote>
                     <p class="lg:text-xl font-medium text-gray-900 !leading-[2]">
                         নলার্জড পোরস মিনিমাইজ করবো কেন? আমি চাই পোরস একদম ভ্যানিশ হয়ে যাক!’ অদ্ভুত শোনাচ্ছে? পোরস সম্পর্কে
-                        সঠিক নলেজ না থাকার কারণে এই কথাটা অনেকেই বলেন। তবে সত্যিটা হচ্ছে পোরস কখনোই ভ্যানিশ করা সম্ভব নয়।
-                        ?
+                        সঠিক নলেজ না থাকার কারণে এই কথাটা অনেকেই বলেন। তবে সত্যিটা হচ্ছে পোরস কখনোই ভ্যানিশ করা সম্ভব নয়?
                     </p>
                 </blockquote>
                 <figcaption class="flex items-center justify-center mt-6 space-x-3">
@@ -27,10 +26,11 @@
             </figure>
         </div>
     </section>
+    <PageReviews />
 </template>
 
 <script setup lang="ts">
-
+import PageReviews from './PageReviews.vue';
 </script>
 
 <style scoped></style>
