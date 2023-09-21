@@ -2,6 +2,9 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 import { Router, createRouter, createWebHashHistory } from 'vue-router'
+import { getCurrentUser } from 'vuefire'
+import { VueFire, VueFireAuth } from 'vuefire'
+import { app as firebaseApp } from './firebase/firebase'
 
 export const router: Router = createRouter({
     history: createWebHashHistory(),
@@ -15,8 +18,43 @@ export const router: Router = createRouter({
             path: '/cart',
             name: 'cart',
             component: () => import('./views/CartView.vue'),
+        },
+        {
+            path: '/admin',
+            name: 'admin',
+            component: () => import('./views/AdminView.vue'),
+            meta: { requiresAuth: false },
+        },
+        {
+            path: '/signin',
+            name: 'signin',
+            component: () => import('./views/SignInView.vue'),
+            meta: { requiresAuth: false },
         }
     ]
 })
 
-createApp(App).use(router).mount('#app')
+router.beforeEach(async (to, from) => {
+    const currentUser = await getCurrentUser()
+
+    if (to.path == "/admin") {
+        if (!currentUser?.email) {
+            return { name: 'signin' }
+        }
+    }
+
+    if (to.path == "/signin") {
+        if (currentUser?.email) {
+            return { name: 'admin' }
+        }
+    }
+
+})
+
+
+createApp(App).use(VueFire, {
+    firebaseApp, modules: [
+        // we will see other modules later on
+        VueFireAuth(),
+    ],
+}).use(router).mount('#app')

@@ -4,6 +4,7 @@ import { useRoute } from 'vue-router'
 import { initFlowbite } from 'flowbite'
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
+// import { SanityDocumentStub } from '@sanity/client'
 
 // initialize components based on data attribute selectors
 onMounted(() => {

@@ -105,6 +105,7 @@
 import { reactive, ref } from 'vue';
 import AppContainer from '../components/AppContainer.vue';
 import { RouterLink } from 'vue-router'
+import admin from '../firebase/admin'
 
 const count = ref<number>(1)
 const totalPrice = ref<number>(1)
@@ -152,6 +153,15 @@ async function hanldeSubmit(e: any) {
     e.preventDefault();
     ordered.value = true
 
+    admin.createData({
+        name: formData.name,
+        area: formData.area,
+        phone: formData.phone,
+        address: formData.address,
+        total: totalPrice.value,
+        items: count.value,
+    }, () => { })
+
     const url = "https://formspree.io/f/xjvqaovp"
     await fetch(url, {
         method: "POST",
@@ -168,6 +178,10 @@ async function hanldeSubmit(e: any) {
         console.log(data);
     })
 }
+
+admin.readData(data => {
+    console.log(data);
+})
 </script>
 
 <style scoped>
