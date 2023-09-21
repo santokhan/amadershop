@@ -83,7 +83,6 @@
         </div>
 
         <Testimonial />
-        <ContactForm />
         <div class="py-10"></div>
     </AppContainer>
 </template>
@@ -92,7 +91,6 @@
 import AppContainer from './AppContainer.vue';
 import AppSlider from './AppSlider.vue';
 import Testimonial from './Testimonial.vue';
-import ContactForm from './ContactForm.vue';
 import { RouterLink } from 'vue-router'
 import { PRODUCT_PRICE } from '../global';
 </script>
