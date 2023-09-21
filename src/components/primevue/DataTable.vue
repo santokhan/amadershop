@@ -127,11 +127,11 @@ import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import ColumnGroup from 'primevue/columngroup';   // optional
 import Row from 'primevue/row';
-import Button from 'primevue/Button';
-import Toolbar from 'primevue/Toolbar';
-import Tag from 'primevue/Tag';
-import Rating from 'primevue/Rating';
-import Dialog from 'primevue/Dialog';
+import Button from 'primevue/button';
+import Toolbar from 'primevue/toolbar';
+import Tag from 'primevue/tag';
+import Rating from 'primevue/rating';
+import Dialog from 'primevue/dialog';
 import AppContainer from '../AppContainer.vue'
 
 const dt = ref();
