@@ -9,8 +9,15 @@ class Admin {
         await getDocs(colRef).then(res => {
             const list: any[] = []
             res.forEach(e => {
-                list.push(e.data())
-                console.log(e.data());                
+                const obj = e.data()
+                obj.id = e.id
+
+                if (obj.area == 100) {
+                    obj.area = "Inside Dhaka"
+                    obj.area = "Outside Dhaka"
+                }
+
+                list.push(obj)
             })
             callBack(list)
         })

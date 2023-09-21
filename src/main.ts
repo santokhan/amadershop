@@ -5,6 +5,7 @@ import { Router, createRouter, createWebHashHistory } from 'vue-router'
 import { getCurrentUser } from 'vuefire'
 import { VueFire, VueFireAuth } from 'vuefire'
 import { app as firebaseApp } from './firebase/firebase'
+import PrimeVue from 'primevue/config';
 
 export const router: Router = createRouter({
     history: createWebHashHistory(),
@@ -57,4 +58,4 @@ createApp(App).use(VueFire, {
         // we will see other modules later on
         VueFireAuth(),
     ],
-}).use(router).mount('#app')
+}).use(router).use(PrimeVue).mount('#app')
