@@ -134,7 +134,6 @@ import Rating from 'primevue/Rating';
 import Dialog from 'primevue/Dialog';
 import AppContainer from '../AppContainer.vue'
 
-const props = defineProps<{ data: any }>()
 const dt = ref();
 const products = ref();
 function assignData() {
