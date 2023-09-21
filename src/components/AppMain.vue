@@ -32,8 +32,8 @@
                         </p>
                     </div>
                     <div class="flex items-center gap-3">
-                        <div class="line-through text-base mt-0.5 flex items-center gap-1">BDT 750</div>
-                        <div class="font-medium">BDT 650</div>
+                        <div class="line-through text-base mt-0.5 flex items-center gap-1">BDT {{ PRODUCT_PRICE + 100 }}</div>
+                        <div class="font-medium">BDT {{ PRODUCT_PRICE }}</div>
                         <div class="w-12 py-0.5 px-2 text-sm bg-main text-white text-center rounded-full font-medium">
                             Sale
                         </div>
@@ -94,6 +94,7 @@ import AppSlider from './AppSlider.vue';
 import Testimonial from './Testimonial.vue';
 import ContactForm from './ContactForm.vue';
 import { RouterLink } from 'vue-router'
+import { PRODUCT_PRICE } from '../global';
 </script>
 
 <style scoped></style>

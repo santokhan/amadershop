@@ -62,7 +62,7 @@
                         <tbody>
                             <tr>
                                 <td class="p-2 border">দাড়ি বৃদ্ধির তেল</td>
-                                <td class="p-2 border">300</td>
+                                <td class="p-2 border">{{ PRODUCT_PRICE }}</td>
                                 <td class="p-2 border">
                                     <form class="flex gap-2">
                                         <button type="button" class="hover:text-main"
@@ -106,6 +106,7 @@ import { reactive, ref } from 'vue';
 import AppContainer from '../components/AppContainer.vue';
 import { RouterLink } from 'vue-router'
 import admin from '../firebase/admin'
+import { PRODUCT_PRICE } from '../global';
 
 const count = ref<number>(1)
 const totalPrice = ref<number>(1)
@@ -139,11 +140,11 @@ function subTotal(count: number | string): number {
     if (typeof count === 'string') {
         count = parseInt(count)
     }
-    return count * 300
+    return count * PRODUCT_PRICE
 }
 function total(count: number, shippingCost: number | string): number {
     shippingCost = typeof shippingCost === 'string' ? parseInt(shippingCost) : shippingCost
-    const subTotal = count * 300
+    const subTotal = count * PRODUCT_PRICE
 
     totalPrice.value = subTotal + shippingCost
     return totalPrice.value
