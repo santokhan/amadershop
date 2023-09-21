@@ -47,8 +47,8 @@ const router = useRouter()
 function handleSubmit(e: any) {
     e.preventDefault()
     authenticateByGoogle((email) => {
-        const ifAdmin = validateAdmin(email)
-        if (ifAdmin) {
+        console.log(validateAdmin(email));        
+        if (validateAdmin(email)) {
             router.push("/admin")
         } else {
             router.push("/")

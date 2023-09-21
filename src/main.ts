@@ -24,7 +24,7 @@ export const router: Router = createRouter({
             path: '/admin',
             name: 'admin',
             component: () => import('./views/AdminView.vue'),
-            meta: { requiresAuth: false },
+            meta: { requiresAuth: true },
         },
         {
             path: '/signin',
@@ -36,26 +36,28 @@ export const router: Router = createRouter({
 })
 
 router.beforeEach(async (to) => {
-    const currentUser = await getCurrentUser()
 
-    if (to.path == "/admin") {
-        if (!currentUser?.email) {
-            return { name: 'signin' }
+    // if meta.requiresAuth == true
+    if (to.meta.requiresAuth) {
+        const currentUser = await getCurrentUser()
+        // if enter to the requiresAuth route
+        if (to.name == "admin") {
+            // if user does not exists redirect to signin
+            if (!currentUser?.email) {
+                return { name: 'signin' }
+            }
         }
     }
 
-    if (to.path == "/signin") {
+    if (to.name == "signin") {
+        const currentUser = await getCurrentUser()
         if (currentUser?.email) {
             return { name: 'admin' }
         }
     }
-
 })
 
-
-createApp(App).use(VueFire, {
-    firebaseApp, modules: [
-        // we will see other modules later on
-        VueFireAuth(),
-    ],
-}).use(router).use(PrimeVue).mount('#app')
+createApp(App).use(router).use(VueFire, {
+    firebaseApp,
+    modules: [VueFireAuth()],
+}).use(PrimeVue).mount('#app')
