@@ -13,8 +13,10 @@ class Admin {
                 obj.id = e.id
 
                 if (obj.area == 100) {
-                    obj.area = "Inside Dhaka"
                     obj.area = "Outside Dhaka"
+                }
+                if (obj.area == 60) {
+                    obj.area = "Inside Dhaka"
                 }
 
                 list.push(obj)
