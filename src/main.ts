@@ -35,7 +35,7 @@ export const router: Router = createRouter({
     ]
 })
 
-router.beforeEach(async (to, from) => {
+router.beforeEach(async (to) => {
     const currentUser = await getCurrentUser()
 
     if (to.path == "/admin") {
